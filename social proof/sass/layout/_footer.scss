@@ -1,0 +1,74 @@
+.footer{
+    &__container{
+        margin-top: 7rem;
+        @include container;
+        display: flex;
+        justify-content: space-between;
+        @include responsive(phone){
+            flex-direction: column;
+        }
+        
+    }
+    &__user{
+        display: flex;
+        img{
+            margin-right: 2rem;
+        }
+        h3{
+            margin-bottom: 0.4rem;
+            font-weight: 700;
+            font-size: 17px;
+            line-height: 15.64px;
+            color: white;
+        }
+        h4{
+            color: #EE69A4;
+            font-weight: 400;
+            font-size: 17px;
+            line-height: 15px;
+        }
+    }
+    &__box-text{
+        padding: 3.5rem;
+        P{
+            padding-top: 3rem;
+            color: white;
+            font-weight: 500;
+            font-size: 17px;
+            line-height: 22px;
+            letter-spacing: -0.3px;
+        }
+    }
+    
+    &__first-box{
+        
+        border-radius: 8px;
+        margin-right: 3rem;
+        background-color: #512051;
+        @include responsive(phone){
+            margin-right: 0;
+            margin-bottom: 1.6rem;
+        }
+    }
+    &__second-box{
+        transform: translateY(10%);
+        border-radius: 8px;
+        margin-right: 3rem;
+        background-color: #512051;
+        @include responsive(phone){
+            margin-right: 0;
+            transform: none;
+            margin-bottom: 1.6rem;
+        }
+    }
+    &__third-box{
+        transform: translateY(20%);
+        border-radius: 8px;
+        background-color: #512051;
+        @include responsive(phone){
+            transform: none;
+            margin-bottom: 10rem;
+        }
+    }
+    
+}
